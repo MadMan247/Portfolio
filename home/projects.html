@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+<script type="text/javascript" defer>
+    function getCurrentYear() {
+        return new Date().getFullYear();
+    }
+    SITE_DATE = 2019;
+
+</script>
 <head>
     <link rel="stylesheet" href="./../styles/home.css">
     <link rel="stylesheet" href="./../styles/header.css">
@@ -37,21 +44,24 @@
             </p>
             <p>
                 <ul>
-                    <li>My personal website (which I will not be linking here), as I made it at a minimum 6 years ago. It could be up to 8 years old. It's gross. I've included a sample at the bottom of this page.</li>
+                    <li>My personal website (The one you're looking at right now!), is at least <span id="est"></span> years ago. It could be up to <span id="est2"></span> years old. Maybe not the design, but I have been self-hosting it for at least that long. You can look at a much older version below.</li>
                     <li>I've made a website for my friends' band, <a href="https://acidfog.com">Acid Fog</a>. They do not use it.</li>
-                    <li>Recently, I worked on a website for <span class="hover" title="the University of Illinois, Springfield">UIS</span>'s Orion Lab using Svelte. I have the <a href="https://github.com/Spar3Chang3/Orion-Labs">source code</a> available on GitHub </li>
+                    <li>Recently, I worked on a website for <span class="hover" title="the University of Illinois, Springfield">UIS</span>'s Orion Lab using Svelte. I have the <a href="https://github.com/Spar3Chang3/Orion-Labs">source code</a> available on GitHub.</li>
                     <li>I record and edit countless videos. I'm aiming to get myself into a more professional space with my videography.</li>
-                    <li>I have several servers set up at my home, running services facing the public, and personal servers, such as a local <span class="hover" title="Network Attached Storage, basically a local server that stores all of my computer files">NAS</span></li>
-                    <li>I've assembled several computers, and I act as a refuge for <span class="hover" title="e-waste is made up of aging electronics that are considered outdated, or are otherwise disposed of.">e-waste</span>. Old <span title="Personal Computers" class="hover">PCs</span> make the perfect machines to host my whimsical services</li>
+                    <li>I have several servers set up at my home, running services facing the public, and personal servers such as a local <span class="hover" title="Network Attached Storage, basically a local server that stores all of my computer files">NAS</span>.</li>
+                    <li>I've assembled several computers, and I act as a refuge for <span class="hover" title="e-waste is made up of aging electronics that are considered outdated, or are otherwise disposed of.">e-waste</span>. Old <span title="Personal Computers" class="hover">PCs</span> make the perfect machines to host my whimsical services.</li>
                 </ul>
             </p>
         </div>
 
     </div>
-    <h2>Below lies what is basically my old site.</h2>
-    <p>Please keep in mind that best practices were NOT used.</p>
-    <iframe style="width:100%; height:20rem;" src="./demo.html"></iframe>
+    <h2>Below lies my old site.</h2>
+    <p>Please keep in mind that best practices were NOT used. Center tag, anyone?</p>
+    <iframe style="width:100%; height:20rem;" src="./home/demo.html"></iframe> <!--Ignore the error, I put in my old site here in secret 🤫-->
 </main>
-
+<script>
+    document.getElementById('est').textContent = getCurrentYear() - 2019;
+    document.getElementById('est2').textContent = getCurrentYear() - 2017;
+</script>
 </body>
 </html>
