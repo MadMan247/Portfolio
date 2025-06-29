@@ -79,7 +79,10 @@ body {
     color: salmon;
     text-decoration: underline wavy darksalmon;
 }
-
+.wrapper {
+    grid-template-columns: 100%;
+    max-width: 100%;
+}
 @media only screen and (max-width: 768px) {
     .home {
 
@@ -98,8 +101,11 @@ body {
     }
     .about-text {
         font-size: var(--text-std-mobile);
-        text-align: left;
+        text-align: center;
     }
+}
+.sweet-form {
+    /*TODO: do. (stylize the radio buttons)*/
 }
 @media only screen and (max-height: 768px) {
 
