@@ -28,9 +28,10 @@
     align-items: center;
     color: white;
 
-    background-image: url("./../imgs/cobble_stone.png");
+    background-image: url("./../imgs/cobble_stone.jpg");
+    image-rendering: pixelated;
     background-repeat: repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: left;
     overflow: hidden;
 }
